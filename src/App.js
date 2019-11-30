@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import Landing from "./Components/Landing.js";
 import Register from "./Components/Register.js";
 import Home from "./Components/Home.js";
@@ -31,7 +31,8 @@ class App extends Component {
         return(
             <div className= "Full-App-Div">
                 <Header/>
-                <div className= "Component-Rendering-Div" >    
+                <div className= "Component-Rendering-Div" >  
+                <BrowserRouter>
                     <Switch>
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/register" component={Register} />
@@ -41,6 +42,7 @@ class App extends Component {
                         <Route exact path="/findclinics" component={FindClinics} />
                         <Route exact path="/resources" component={Resources} />
                     </Switch>
+                </BrowserRouter>  
                 </div>
                 <Footer/>               
             </div>
