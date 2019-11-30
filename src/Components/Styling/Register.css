@@ -1,0 +1,30 @@
+.register-container{
+    padding:1rem;
+}
+.register-text-input-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.register-text-input-div > input{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color:grey;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border-radius: .5rem;
+}
+.select-submit-container > select{
+    border-radius: .1rem;
+    margin:.25rem;
+    color:grey;
+    
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: darkgray;
+    opacity: 1; /* Firefox */
+}
+
+
+  

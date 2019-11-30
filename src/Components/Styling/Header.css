@@ -1,0 +1,13 @@
+Header{
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    display:block;
+}
+
+.App-logo{
+   border: thin solid red;
+   width:10%;
+   display: block;
+   height:5%
+}
