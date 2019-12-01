@@ -38,4 +38,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// const PORT = process.env.PORT || 5000
+// app.listen(PORT, () => {
+//   console.log(`Mixing it up on port ${PORT}`)
+// })
+
 module.exports = app;

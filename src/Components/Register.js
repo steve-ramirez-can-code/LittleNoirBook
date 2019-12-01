@@ -27,7 +27,7 @@ class Register extends Component {
     
     handleSubmitToDatabase = (event)=>{
         event.preventDefault();
-        axios.post("/users/register", {
+        axios.post("https://localhost:3001/users/register", {
             firstName:this.state.firstName,
             lastName:this.state.lastName,
             userName:this.state.userName,
