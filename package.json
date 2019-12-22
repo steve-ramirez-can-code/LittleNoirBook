@@ -1,12 +1,12 @@
 {
     "scripts": {
         "api": "cd api && node ./bin/www",
-        "src": "cd client && echo 'i am here'",
-        "testing":"echo 'hello!'",
+        "src": "cd client && node node_modules/react-scripts/scripts/start.js",
+        "testing": "echo 'hello!'",
         "start": "concurrently \"npm run api\" \"npm run src\""
-
     },
     "dependencies": {
-        "concurrently": "^5.0.0"
+        "concurrently": "^5.0.0",
+        "react": "^16.12.0"
     }
 }
