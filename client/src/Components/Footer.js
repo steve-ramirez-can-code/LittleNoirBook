@@ -31,13 +31,6 @@ componentWillMount(){
             }),1000);
 }
 
-// componentWillUnmount(){ 
-//     clearInterval(this.setState)
-// };
-
-    
-
-
 render(){
     return(
         <footer className="App-footer">

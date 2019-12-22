@@ -5,7 +5,7 @@ import  './Styling/Landing.css';
 class Landing extends Component{
     render(){
         return(
-            <section className = "landing-main-div">
+            <div className = "landing-main-div">
                 <Link to = "/register">
                     <button type="button">
                         Register
@@ -16,7 +16,7 @@ class Landing extends Component{
                         Log In
                     </button>
                 </Link>
-            </section>
+            </div>
         )}
     }
     

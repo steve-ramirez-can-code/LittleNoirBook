@@ -3,7 +3,6 @@ Footer{
     background-color: black;
     color: white;
     font-size: 14px;
-    position: absolute;
     bottom:0;
     width: 100%
 }

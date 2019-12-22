@@ -44,7 +44,9 @@ class App extends Component {
                     </Switch>
                 </BrowserRouter>  
                 </div>
-                <Footer/>               
+                <div className = "Footer-Div">
+                    <Footer/>               
+                </div>
             </div>
         )}
     }   

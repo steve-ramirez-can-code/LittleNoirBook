@@ -8,7 +8,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.Component-Rendering-Div{
+    min-height: 65vh;
+}
 
 .App-link {
   color: #09d3ac;
+}
+
+.Footer-Div{
+    min-height: 5vh;
 }

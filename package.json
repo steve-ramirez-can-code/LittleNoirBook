@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "api": "cd api && node ./bin/www",
+        "api": "cd api && nodemon ./bin/www",
         "src": "cd client && node node_modules/react-scripts/scripts/start.js",
         "testing": "echo 'hello!'",
         "start": "concurrently \"npm run api\" \"npm run src\""
@@ -8,5 +8,8 @@
     "dependencies": {
         "concurrently": "^5.0.0",
         "react": "^16.12.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
     }
 }

@@ -20,7 +20,7 @@ class Resources extends Component{
                       <a href="https://www.womenhelpingwomen.org/"> Organizations Geared Towards Women who Suffer from Domestic Violence</a>
                     </li>
                   </ul>
-                  <h3> Resources forLGBTQ Individuals:</h3>
+                  <h3> Resources for LGBTQ Individuals:</h3>
                     <ul>
                     <li>  
                       <a href="http://www.impactprogram.org/topics/sex-ed/"> Sexual Education Resources for LGBTQ Individuals or Youth</a>
