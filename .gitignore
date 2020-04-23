@@ -3,15 +3,7 @@
 HelpfulCodeSnippets
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
+node_modules/
 
 # misc
 .DS_Store

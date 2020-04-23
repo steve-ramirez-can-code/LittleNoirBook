@@ -21,7 +21,7 @@ class Login extends Component{
     
     handleConfirmWithDatabase = (event)=>{
         event.preventDefault();
-        axios.post("/users/login", {
+        axios.post("http://localhost:3001/users/login", {
             userName:this.state.userName,
             passwordConfirm:this.state.passwordConfirm,
         })
@@ -33,6 +33,8 @@ class Login extends Component{
             console.log(this.state);
             console.log(this.props);
             window.alert("Login Successful")
+            this.props.history.push('./home')
+
         })
         .catch(function(err) {
             console.log(`this is your error!: ${err.message}`)
