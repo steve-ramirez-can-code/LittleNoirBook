@@ -8,9 +8,8 @@ Much like props and state in react */
 
 router.get("/", db.getUsers)
 /* arguments: (route,(function or file)
-in this case: route = / which is students and db.getStudents is a function  
-the slash in here is refering to the previous file path it was taking. in this case students. /students is unnecessary
-/ is enoughule.exports = router
+in this case: route = / which is users and db.getUsers is a function  
+the slash in here is refering to the previous file path it was taking. in this case users. /users is unnecessary    / is enough
 */
 router.post("/register", db.createUser)
 
@@ -18,6 +17,8 @@ router.post("/login", db.verifyUser)
 
 router.post("/createcontact", db.createContact)
 
-// router.get("")
+router.get("/test", function(req,res,next){
+    res.render('index', {title: 'testing the users/test route'})
+})
 
 module.exports = router

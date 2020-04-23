@@ -10,7 +10,7 @@ var db = pgp(connectionString)
 
 const getUsers = (req, res, next) => {
     db.any('SELECT * FROM users')
-    console.log(`this is in getsusers fun in queries: ${req}`)
+    console.log(`this is in getsusers func in queries: ${req}`)
     .then((data) => {
         res.status(200)
         .send({
@@ -18,7 +18,7 @@ const getUsers = (req, res, next) => {
         });
     })
     .catch((err)=>{
-        return ("this is an error")
+        return (`Error:${err}`)
     })
 };
 
@@ -31,10 +31,13 @@ const createUser = (req, res, next) => {
             message: "Registration Successful"
         })
     })
+    .then(() => {
+        res.redirect('http://google.com')
+    })
     .catch((err)=>{
         res.status(500)
         .json({
-            message:err
+            message:`this is the catch in createUser: ${err}`
         })
     })
 }
@@ -49,9 +52,11 @@ const verifyUser = (req, res, next) => {
         })
     })
     .catch((err)=>{
+
         res.status(500)
+        console.log(err)
         .json({
-            message:"You haven't registered yet!"
+            message: 'Please try again'
         })
     })
 }

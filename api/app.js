@@ -1,16 +1,24 @@
+var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+/*
+Morgan is useful for logging everything that the backend does to the console in the terminal
+*/
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index.js');
-var usersRouter = require('./routes/users.js');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
 
+/*
+Notice the order of how the file is structured. Middleware should be named before the actual request. so usually app.use comes before app.get
+*/
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -37,9 +45,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// const PORT = process.env.PORT || 5000
-// app.listen(PORT, () => {
-//   console.log(`Mixing it up on port ${PORT}`)
-// })
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+  console.log(`Mixing it up on port ${PORT}`)
+})
 
 module.exports = app;

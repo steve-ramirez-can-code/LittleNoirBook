@@ -46,7 +46,7 @@ this starts the frontend and backend of the project
 |React|NodeJS|ExpressJS|
 |--|--|--|
 |**PostgresSQL**|**Concurrently**|**Nodemon**|
-|**Sequelize**|**Morgan**||
+|**Axios**|**Morgan**||
 ---
 ### Features
 

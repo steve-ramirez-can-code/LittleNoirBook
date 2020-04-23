@@ -35,7 +35,8 @@ class Login extends Component{
             window.alert("Login Successful")
         })
         .catch(function(err) {
-            console.log(err.messsage);
+            console.log(`this is your error!: ${err.message}`)
+            ;
         });   
     };
     
