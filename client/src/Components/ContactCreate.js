@@ -41,7 +41,7 @@ class ContactCreate extends Component {
     
     handleSubmitToDatabase = (event)=>{
             event.preventDefault();
-            axios.post("/users/createcontact", {
+            axios.post("http://localhost:3001/users/createcontact", {
                 personName:this.state.personName,
                 userId: this.props.userid, 
                 personPhone:this.state.personPhone,
@@ -60,7 +60,6 @@ class ContactCreate extends Component {
                 menstruating:this.state.menstruating,
             })
             .then(res => {
-                // window.alert(`${res.data}-this is within contactcreate.js`);
                 window.alert("Contact added to your LBB");
                 this.setState({
                    contactMade:true 

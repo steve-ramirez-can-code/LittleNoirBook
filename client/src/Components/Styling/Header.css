@@ -2,12 +2,15 @@ Header{
     background-color: #1A1A1A;
     color: white;
     text-align: center;
-    display:block;
+    display: block;
 }
 
 .App-logo{
-   border: thin solid red;
-   width:10%;
+   width: 10vw;
    display: block;
-   height:5%
+   height: 10vh
+}
+
+.App-intro {
+    text-align: center;
 }

@@ -39,6 +39,8 @@ class Register extends Component {
         })
         .then(res => {
             window.alert("Registration Successful");
+            console.log(this.props)
+            console.log(this)
             this.props.history.push('./login');   
         })
         .catch(function(err) {

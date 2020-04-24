@@ -34,7 +34,9 @@ router.post("/login", function(req, res, next){
     res.send(`hey there! this is the req: ${req.body}`)
     // res.redirect('../')
 })
-router.post("/createcontact", db.createContact)
+router.post("/createcontact", function(req,res,next){
+    res.redirect('/home')
+})
 
 router.get("/test", function(req,res,next){
     res.render('index', {title: 'testing the users/test route'})

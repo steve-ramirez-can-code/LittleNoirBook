@@ -1,34 +1,39 @@
 import React, { Component } from 'react';
-import  '../App.css';
-import {Route, Switch, Link, Redirect} from 'react-router-dom';
-import axios from "axios";
+import  './Styling/Resources.css';
 
 class Resources extends Component{
     render(){
         return(
-                <div id = "Resource-Main-Div">
-                  <h2>Resources List for any Lingering Questions or Immediate Concerns</h2>
-                  <h3>Resources for all individuals:</h3>
-                  <ul>
-                    <li>
-                      <a href="http://www.healthtalk.org/young-peoples-experiences/sexual-health/topics"> Information for All General Sex Questions (First time, how to be safe, birth control, etc)</a>  
-                    </li>
-                  </ul>
-                  <h3>Resources for Women:</h3>
-                  <ul>
-                    <li>
-                      <a href="https://www.womenhelpingwomen.org/"> Organizations Geared Towards Women who Suffer from Domestic Violence</a>
-                    </li>
-                  </ul>
-                  <h3> Resources for LGBTQ Individuals:</h3>
-                    <ul>
-                    <li>  
-                      <a href="http://www.impactprogram.org/topics/sex-ed/"> Sexual Education Resources for LGBTQ Individuals or Youth</a>
-                    </li>
-                    <li>
-                      <a href="https://truecolorsfund.org/"> Resources for LGBTQ Youth Experiencing Homelessness and Financial Strife</a>
-                    </li>
-                  </ul>
+                <div className = "Resource-Main-Div">
+                    <h2>Resources List for any Lingering Questions or Immediate Concerns</h2>
+                    <br></br>
+                <h4>Resources for all individuals:</h4>
+                <ul style={{listStyleType:"none"}}>
+                <li >
+                <a href="http://www.healthtalk.org/young-peoples-experiences/sexual-health/topics"> Information for All General Sex Questions (First time, how to be safe, birth control, etc)</a>  
+                </li>
+                </ul>
+                <h4>Resources for Domestic Abuse/Violence Victims:</h4>
+                <ul style={{listStyleType:"none"}}>
+                <li>
+                <a href="https://www.bflnyc.org/programs-services/#freedom-house">Organization Geared Towards People who Suffer from Domestic Violence and are Seeking Refuge</a>
+                </li>
+                <li>
+                <a href='https://www.voa-gny.org/dv'>Resources for Aid in Dealing with Domestic Violence and Potential Shelter</a>
+                </li>
+                </ul>
+                <h4> Resources for LGBTQ Individuals:</h4>
+                <ul style={{listStyleType:"none"}}>
+                <li>  
+                <a href="http://www.impactprogram.org/topics/sex-ed/"> Sexual Education Resource for LGBTQ Individuals or Youth</a>
+                </li>
+                <li>
+                <a href="https://truecolorsfund.org/"> Resources for LGBTQ Youth Experiencing Homelessness and Financial Strife</a>
+                </li>
+                <li>
+                <a href="https://truecolorsfund.org/"> Resource for The Lesbian, Gay, Bisexual & Transgender Community Center</a>
+                </li>
+                </ul>
                 </div>
               
         )}

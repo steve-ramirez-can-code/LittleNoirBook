@@ -26,15 +26,9 @@ class Login extends Component{
             passwordConfirm:this.state.passwordConfirm,
         })
         .then(res => {
-            this.props.loginUser(res.data.data.id)
-            console.log("this is the response.data: ");
-            console.log(res.data.data.id);
-            console.log("this is the state: ");
-            console.log(this.state);
-            console.log(this.props);
+            // this.props.loginUser(res.data.data.id)
             window.alert("Login Successful")
-            this.props.history.push('./home')
-
+            window.location="home"
         })
         .catch(function(err) {
             console.log(`this is your error!: ${err.message}`)
