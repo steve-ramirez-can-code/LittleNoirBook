@@ -43,10 +43,9 @@ this starts the frontend and backend of the project
 ```
 ---
 #### Technologies Used
-|React|NodeJS|ExpressJS|
-|--|--|--|
-|**PostgresSQL**|**Concurrently**|**Nodemon**|
-|**Axios**|**Morgan**||
+|HTML|CSS|JavaScript|React|ExpressJS|
+|--|--|--|--|--|
+|**NodeJS**|**Axios**|**PostgresSQL**|**Concurrently**|**Nodemon**|
 ---
 ### Features
 
